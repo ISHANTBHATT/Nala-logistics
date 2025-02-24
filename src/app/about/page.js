@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import AboutSection from "../components/AboutSection";
+import CompanySection from "../components/CompanySection";
 
 function Page() {
   return (
@@ -37,35 +39,40 @@ function Page() {
         </nav>
       </div>
       <main className="flex flex-col">
+        <AboutSection />
         {/* SECTION 2: About Us + Stats */}
-        <section className="w-full bg-gray-50">
+        {/* <section className="w-full bg-gray-50">
           <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
             <div className="grid gap-12 lg:grid-cols-2">
-              {/* Left: Image (or you can do a 2-column approach) */}
-              <div className="relative  w-full rounded-xl overflow-hidden md:h-full ">
+              <div className="relative rounded-xl overflow-hidden  ">
                 <Image
                   src="/images/about.png"
                   alt="Warehouse workers"
-                  fill
-                  className="object-cover"
+                  width={1000}
+                  height={1000}
+                  className="w-full h-full"
                 />
               </div>
-              {/* Right: Content */}
               <div className="">
                 <h2 className="text-xl font-bold text-[#228186] uppercase">
                   About Us
                 </h2>
-                <h1 className="mt-2 text-3xl font-bold text-gray-800">
-                  We’ll keep free items Damage Free
+                <h1 className="mt-2 text-4xl font-bold text-secondary">
+                  We’ll keep free items
+                  <br />
+                  <span className="font-normal">Damage Free</span>
                 </h1>
                 <p className="mt-4 text-gray-600 max-w-2xl">
-                  Lorem ipsum is simply dummy text of the printing and
+                  Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s.
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. It has survived not only five centuries, but
+                  also the leap into electronic typesetting, remaining
+                  essentially unchanged.
                 </p>
 
-                {/* Bullet points */}
-                <div className="mt-8 space-y-4">
+                <div className="mt-8 space-y-20">
                   <div className="flex items-start">
                     <div className="mr-3 flex h-10 w-10 items-center justify-center rounded-full bg-blue-100">
                       <span className="text-blue-600">Icon</span>
@@ -110,7 +117,6 @@ function Page() {
                   </div>
                 </div>
 
-                {/* Stats + Button */}
                 <div className="mt-8 flex flex-col sm:flex-row sm:items-center sm:justify-between">
                   <div className="flex items-center space-x-8">
                     <div>
@@ -138,12 +144,13 @@ function Page() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
+        <CompanySection />
         {/* SECTION 1: Core Values & Hero */}
-        <section className="w-full bg-white">
+        {/* <section className="w-full bg-white">
           <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-            {/* Top: Our Core Values */}
+
             <div className="mb-12">
               <h2 className="text-xl font-semibold text-[#228186] uppercase">
                 Company Values
@@ -157,11 +164,11 @@ function Page() {
               </p>
             </div>
 
-            {/* Cards: Entrepreneurship, Collaboration, Commitment, Integrity & Respect */}
+
             <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-4">
-              {/* Card 1 */}
+
               <div className="flex flex-col items-center p-6 rounded-lg shadow hover:shadow-md transition">
-                {/* Replace with actual icon or image */}
+
                 <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-blue-100">
                   <span className="text-blue-600">Icon</span>
                 </div>
@@ -172,7 +179,7 @@ function Page() {
                   Brief description of this value.
                 </p>
               </div>
-              {/* Card 2 */}
+
               <div className="flex flex-col items-center p-6 rounded-lg shadow hover:shadow-md transition">
                 <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-blue-100">
                   <span className="text-blue-600">Icon</span>
@@ -184,7 +191,7 @@ function Page() {
                   Brief description of this value.
                 </p>
               </div>
-              {/* Card 3 */}
+
               <div className="flex flex-col items-center p-6 rounded-lg shadow hover:shadow-md transition">
                 <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-blue-100">
                   <span className="text-blue-600">Icon</span>
@@ -196,7 +203,7 @@ function Page() {
                   Brief description of this value.
                 </p>
               </div>
-              {/* Card 4 */}
+
               <div className="flex flex-col items-center p-6 rounded-lg shadow hover:shadow-md transition">
                 <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-blue-100">
                   <span className="text-blue-600">Icon</span>
@@ -211,10 +218,10 @@ function Page() {
             </div>
           </div>
 
-          {/* Hero / Tracking */}
+
           <div className="relative bg-blue-900 text-white">
             <div className="mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:flex lg:items-center lg:px-8">
-              {/* Left: Ship Image */}
+              
               <div className="relative h-64 w-full mb-8 lg:mb-0 lg:w-1/2 lg:h-96 lg:mr-8">
                 <Image
                   src="/images/container-ship.jpg"
@@ -223,7 +230,7 @@ function Page() {
                   className="object-cover rounded-lg"
                 />
               </div>
-              {/* Right: Text + Tracking */}
+              
               <div className="lg:w-1/2">
                 <h2 className="text-xl font-bold uppercase text-yellow-400">
                   We are Logistics
@@ -235,7 +242,7 @@ function Page() {
                   Lorem ipsum is simply dummy text of the printing and
                   typesetting industry.
                 </p>
-                {/* Tracking Box */}
+                
                 <div className="mt-6 flex flex-col sm:flex-row sm:items-center">
                   <input
                     type="text"
@@ -249,7 +256,7 @@ function Page() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
     </>
   );

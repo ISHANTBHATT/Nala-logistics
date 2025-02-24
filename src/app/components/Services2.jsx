@@ -211,7 +211,7 @@ export default function Services2() {
         industry the standard dummy text ever since the when an printer took.
       </motion.p>
 
-      <div className="grid md:grid-cols-2 gap-8 items-center px-4 md:px-20">
+      <div className="grid md:grid-cols-2 gap-8 items-center px-4 lg:px-20">
         <div className="space-y-4">
           {services.map((service, index) => (
             <motion.div
@@ -222,7 +222,7 @@ export default function Services2() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="flex items-center text-left bg-white hover:shadow-lg hover:shadow-[#228186]"
             >
-              <div className="w-2 h-24 bg-[#228186] mr-4"></div>
+              <div className="w-2 h-24 bg-primary mr-4"></div>
               <div className="flex p-4 gap-4 items-center">
                 <service.icon className="w-16 h-16 text-[#228186] " />
                 <div className="flex-col items-center gap-4 mb-2 py-6">

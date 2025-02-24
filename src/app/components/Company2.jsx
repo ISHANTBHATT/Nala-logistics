@@ -203,7 +203,7 @@ export default function Company2() {
     },
   ];
   return (
-    <main className="min-h-screen py-10 md:py-20 px-4 lg:px-40">
+    <main className="h-full py-10 md:py-20 px-4 lg:px-20 xl:px-40">
       <section className="relative">
         <motion.div
           className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8"
@@ -251,7 +251,7 @@ export default function Company2() {
             <div className="relative">
               <div className="bg-[#fff] overflow-hidden flex justify-center py-2">
                 <div className="relative inline-flex">
-                  <h1 className="text-[200px] md:text-[350px] font-bold leading-[150px] md:leading-[300px]">
+                  <h1 className="text-[200px] py-4 md:text-[350px] font-bold leading-[150px] md:leading-[300px]">
                     35
                   </h1>
                   <Image

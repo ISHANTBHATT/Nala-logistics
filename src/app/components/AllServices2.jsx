@@ -1176,7 +1176,7 @@ const services = [
 
 export default function AllServices2() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
+    <div className="h-full bg-gradient-to-b from-white to-gray-50">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}

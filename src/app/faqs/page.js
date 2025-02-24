@@ -134,7 +134,7 @@ export default function Faq() {
               {faqs.map((faq, index) => (
                 <AccordionItem key={index} value={`item-${index}`}>
                   <AccordionTrigger>{faq.question}</AccordionTrigger>
-                  <AccordionContent className="whitespace-pre-wrap">
+                  <AccordionContent className="whitespace-pre-wrap text-base">
                     {faq.answer}
                   </AccordionContent>
                 </AccordionItem>
