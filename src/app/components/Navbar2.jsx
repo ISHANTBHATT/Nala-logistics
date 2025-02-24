@@ -201,7 +201,7 @@ export function Navbar2() {
     },
     {
       id: 6,
-      name: "Careers",
+      name: "CAREERS",
       link: "careers",
     },
     {
