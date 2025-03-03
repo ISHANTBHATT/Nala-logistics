@@ -180,6 +180,7 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Company2() {
   const approch = [
@@ -219,12 +220,12 @@ export default function Company2() {
             transition={{ duration: 0.8 }}
             className="space-y-4"
           >
-            <h2 className="text-[#228186] text-xl md:text-2xl font-light">
+            <h2 className="text-[#228186] text-xl md:text-2xl font-semibold">
               COMPANY APPROACH
             </h2>
             <h1 className="text-3xl md:text-5xl font-bold text-[#003366] leading-tight">
-              Reliable Logistic &<br />
-              Transport Solutions
+              Reliable Maritime &<br />
+              Logistics Solutions
             </h1>
           </motion.div>
           <motion.div
@@ -233,10 +234,12 @@ export default function Company2() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <Button className="bg-[#228186] hover:bg-[#1A6266] text-white px-6 py-4 md:px-8 md:py-6 rounded-xl">
-              Read More
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
+            <Link href="/about">
+              <Button className="bg-[#228186] hover:bg-[#1A6266] text-white px-6 py-4 md:px-8 md:py-6 rounded-xl">
+                Read More
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </Link>
           </motion.div>
         </motion.div>
 
@@ -264,7 +267,8 @@ export default function Company2() {
                 </div>
               </div>
               <h3 className="text-[#003366] text-2xl md:text-4xl font-bold mt-4">
-                Year's experience in transport and logistics services
+                A total of 35 years of collective experience in the trade
+                industry
               </h3>
             </div>
           </motion.div>
@@ -281,7 +285,7 @@ export default function Company2() {
               <div className="space-y-4 md:space-y-8">
                 {approch.map((item, idx) => (
                   <motion.div
-                    key={item.i}
+                    key={item.id}
                     className="flex items-center gap-4"
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}

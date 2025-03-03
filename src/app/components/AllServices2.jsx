@@ -1125,52 +1125,58 @@ import {
   Ship,
   Truck,
   TrainFront,
+  Globe,
+  Briefcase,
+  FileText,
+  Boxes,
+  TruckLoading,
 } from "lucide-react";
 import "swiper/css";
 import "swiper/css/navigation";
+import Link from "next/link";
 
 const services = [
   {
     id: "01",
-    title: "Air Freight",
+    title: "SHIPPING",
     description:
-      "Global air freight solutions with express delivery options and real-time tracking for time-sensitive cargo.",
-    icon: Plane,
-  },
-  {
-    id: "02",
-    title: "Ocean Freight",
-    description:
-      "Reliable sea freight services with flexible container solutions and competitive rates for international shipping.",
+      "We will make certain that your vessel receives excellent care while at the port and that all cargo operations are conducted efficiently. You can trust that all the needs of your crew will be met in a sustainable and responsible way.",
     icon: Ship,
   },
   {
-    id: "03",
-    title: "Road Transport",
+    id: "02",
+    title: "NVOCC",
     description:
-      "Comprehensive road transportation network covering local and interstate routes with dedicated fleet services.",
-    icon: Truck,
+      "We provide NVOCC services as intermediaries for shipping goods without owning ships. Our team consolidates shipments, issues bills of lading, and manages logistics internationally, negotiating vessel space for competitive rates and flexible options.",
+    icon: Globe,
+  },
+  {
+    id: "03",
+    title: "Maritime Consultancy",
+    description:
+      "We utilize our extensive network and digital resources to gather and examine datasets that ultimately benefit our customers. Our team offers valuable insights and expert analysis across all ports, terminals, systems, and the entire logistics ecosystem.",
+    icon: Briefcase,
   },
   {
     id: "04",
-    title: "Rail Freight",
+    title: "Customs Clearance",
     description:
-      "Sustainable rail freight solutions for bulk cargo with extensive network coverage and intermodal options.",
-    icon: TrainFront,
+      "NALA Shipping ensures that all required customs clearance procedures are completed accurately and without delay. Our dedicated team is committed to providing a seamless experience, allowing you to focus on your business while we handle the complexities of customs regulations.",
+    icon: FileText,
   },
   {
     id: "05",
-    title: "Warehousing",
+    title: "Project Cargo Handling",
     description:
-      "State-of-the-art warehousing facilities with inventory management and distribution services.",
-    icon: Warehouse,
+      "We take great pride in our expertise in managing OOG and breakbulk shipments. Our team ensures that these shipments are processed safely and with the utmost professionalism. This commitment to quality sets us apart in the industry.",
+    icon: Boxes,
   },
   {
     id: "06",
-    title: "Project Cargo",
+    title: "Trucking & Forwarding",
     description:
-      "Specialized handling of oversized and heavy-lift cargo with end-to-end project management.",
-    icon: Package,
+      "Our trucking and freight forwarding services ensure seamless operations to the cargo's final destination, connecting various transportation modes. We emphasize transparency and provide customers with a single vendor and point of contact throughout the process.",
+    icon: Truck,
   },
 ];
 
@@ -1191,18 +1197,19 @@ export default function AllServices2() {
             transition={{ duration: 0.5, delay: 0.8 }}
             className="text-5xl font-bold tracking-tight text-white bg-clip-text text-transparent mb-4 text-stroke-orange"
           >
-            ALL SERVICES
+            OUR OFFERING
           </motion.h2>
           <motion.h3
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 1 }}
-            className="text-5xl font-bold text-[#002B5B] mb-6"
+            className="text-3xl font-bold text-[#002B5B] mb-6"
           >
-            Trusted For Our Services
+            We offer an extensive array of services, encompassing everything
+            from maritime solutions to logistics assistance.
           </motion.h3>
-          <motion.p
+          {/* <motion.p
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -1212,7 +1219,7 @@ export default function AllServices2() {
             Comprehensive logistics solutions tailored to your needs. From air
             freight to project cargo, we deliver excellence across all
             transportation modes.
-          </motion.p>
+          </motion.p> */}
         </div>
         <div className="relative">
           <Swiper
@@ -1253,7 +1260,7 @@ export default function AllServices2() {
                       </span>
                       <div className="flex items-center mb-4">
                         <div className="p-3 bg-[#228186]/20 rounded-xl mr-4 shadow-md">
-                          <service.icon className="w-8 h-8 text-[#228186]" />
+                          <service.icon className="w-10 h-10 text-[#228186]" />
                         </div>
                         <h4 className="text-2xl font-bold text-[#002B5B]">
                           {service.title}
@@ -1262,10 +1269,12 @@ export default function AllServices2() {
                       <p className="text-gray-600 mb-6 line-clamp-3">
                         {service.description}
                       </p>
-                      <button className="inline-flex items-center bg-gradient-to-r from-[#1A6266] to-[#228186] text-white px-6 py-2 rounded-full font-semibold hover:from-teal-800 hover:to-[#1A6266] transition-all group">
-                        VIEW DETAIL
-                        <ChevronRight className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" />
-                      </button>
+                      <Link href="/services">
+                        <button className="inline-flex items-center bg-gradient-to-r from-[#1A6266] to-[#228186] text-white px-6 py-2 rounded-full font-semibold hover:from-teal-800 hover:to-[#1A6266] transition-all group">
+                          VIEW DETAIL
+                          <ChevronRight className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" />
+                        </button>
+                      </Link>
                     </div>
                   </div>
                 </motion.div>

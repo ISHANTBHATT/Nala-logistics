@@ -213,23 +213,41 @@
 "use client";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 const features = [
   {
     number: "01",
-    title: "Solutions and specialized",
+    image: "/images/2.jpg",
+    title: "Depot Services",
     description:
       "Our aim is to optimize and improve your supply chain so that we can give you the best service",
   },
   {
     number: "02",
-    title: "Multiple warehouses",
+    image: "/images/bg-1.jpg",
+    title: "Warehousing",
     description:
       "We provide multiple drop-off and pickup locations so you don't have to worry. And you should not face any kind...",
   },
   {
     number: "03",
-    title: "Tracking made easy",
+    image: "/images/bg-4.jpg",
+    title: "Surveys & Inspections",
+    description:
+      "A tracking number for the entire process, so that you can find the exact position. It will help you.",
+  },
+  {
+    number: "04",
+    image: "/images/contact_banner3.jpg",
+    title: "Tally Services",
+    description:
+      "A tracking number for the entire process, so that you can find the exact position. It will help you.",
+  },
+  {
+    number: "05",
+    image: "/images/2.jpg",
+    title: "Ship Chandelling",
     description:
       "A tracking number for the entire process, so that you can find the exact position. It will help you.",
   },
@@ -237,42 +255,63 @@ const features = [
 
 export default function Features2() {
   return (
-    <section className="relative h-full">
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage: "url('/images/bg-5.jpg')",
-        }}
-      />
-      <div className="relative px-4 ">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
-          {features.map((feature, index) => (
-            <motion.div
-              key={feature.number}
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.2 }}
-              className="relative h-[350px] md:h-[600px] w-full max-w-sm group overflow-hidden rounded-lg shadow-lg"
-            >
-              <div className="absolute inset-0 bg-black/30 p-6 flex flex-col justify-end group-hover:justify-center text-white items-center text-center transition-all duration-500 group-hover:bg-white group-hover:text-[#002B5B]">
-                <div className="text-5xl md:text-6xl font-bold mb-3">
-                  {feature.number}
-                </div>
-                <h4 className="text-xl md:text-2xl font-bold mb-3">
-                  {feature.title}
-                </h4>
-                <p className="text-sm md:text-base mb-5">
+    <>
+      <motion.h2
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.8 }}
+        className="text-4xl md:text-6xl font-bold text-white text-stroke-orange mb-2 text-center py-10"
+      >
+        VALUE ADDED SERVICES
+      </motion.h2>
+      <section className="relative h-full">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: "url('/images/bg-5.jpg')",
+          }}
+        />
+        <div className="relative px-4 ">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 place-items-center">
+            {features.map((feature, index) => (
+              <motion.div
+                key={feature.number}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.2 }}
+                className="relative h-[350px] md:h-[600px] w-full max-w-sm group overflow-hidden rounded-lg shadow-lg"
+              >
+                <div className="absolute inset-0 bg-black/30 p-6 flex flex-col gap-6 justify-end group-hover:justify-center text-white items-center text-center transition-all duration-500 group-hover:bg-white group-hover:text-[#002B5B]">
+                  <div className="w-40 h-40 rounded-full bg-white relative">
+                    <Image
+                      src={feature.image}
+                      // width={200}
+                      // height={300}
+                      fill
+                      className=" object-cover rounded-full absolute "
+                    />
+                  </div>
+
+                  <div className="text-5xl md:text-6xl font-bold mb-3">
+                    {feature.number}
+                  </div>
+                  <h4 className="text-xl md:text-2xl font-bold mb-3">
+                    {feature.title}
+                  </h4>
+                  {/* <p className="text-sm md:text-base mb-5">
                   {feature.description}
-                </p>
-                <button className="w-10 h-10 md:w-12 md:h-12 border-2 border-white rounded-full flex items-center justify-center group-hover:border-[#002B5B] group-hover:text-[#002B5B] transition-colors duration-300">
-                  <ArrowRight className="w-5 h-5 md:w-6 md:h-6" />
-                </button>
-              </div>
-            </motion.div>
-          ))}
+                </p> */}
+                  <button className="w-10 h-10 md:w-12 md:h-12 border-2 border-white rounded-full flex items-center justify-center group-hover:border-[#002B5B] group-hover:text-[#002B5B] transition-colors duration-300">
+                    <ArrowRight className="w-5 h-5 md:w-6 md:h-6" />
+                  </button>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }

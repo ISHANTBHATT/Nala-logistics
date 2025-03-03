@@ -55,31 +55,33 @@ export default function Faq() {
   const faqs = [
     {
       id: 1,
-      question: "What is GTA in transport?",
-      answer: `A digital interface the person causing the movement of goods uploads the relevant information prior to the commencement of movement of goods and generates e-way bill on the GST portal. Best service are provide us. simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.`,
+      question: "What types of cargo does NALA Shipping handle?",
+      answer: `NALA Shipping specializes in handling a wide range of cargo types, including containerized goods, bulk commodities, and hazardous materials. Our services are tailored to meet the specific needs of each shipment, ensuring safe and efficient transportation.`,
     },
     {
       id: 2,
-      question: "Can we take input on transportation?",
-      answer: `A digital interface the person causing the movement of goods uploads the relevant information prior to the commencement of movement of goods and generates e-way bill on the GST portal. Best service are provide us. simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.`,
+      question:
+        "How does NALA Shipping ensure the safety and security of my cargo?",
+      answer: `We prioritize the safety and security of your cargo by employing advanced tracking systems, stringent security measures, and comprehensive risk management protocols. Our team is dedicated to maintaining the highest standards of safety throughout the shipping process.`,
     },
     {
       id: 3,
-      question: " What are e-way bills?",
+      question: "Can NALA Shipping manage customs clearance and documentation?",
       answer:
-        "A digital interface the person causing the movement of goods uploads the relevant information prior to the commencement of movement of goods and generates e-way bill on the GST portal. Best service are provide us. simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.",
+        "Yes, NALA Shipping offers comprehensive customs clearance and documentation services. Our experienced professionals navigate the complexities of international trade regulations to ensure smooth and timely clearance of your shipments.",
     },
     {
       id: 4,
-      question: "What is unique number in e way Bill?",
+      question:
+        "What are NALA Shipping's standard transit times for international shipments?",
       answer:
-        "A digital interface the person causing the movement of goods uploads the relevant information prior to the commencement of movement of goods and generates e-way bill on the GST portal. Best service are provide us. simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.",
+        "Transit times vary depending on the origin, destination, and shipping method. We provide estimated delivery times during the booking process and keep you updated on your shipment's progress to ensure transparency and reliability.",
     },
     {
       id: 5,
-      question: "Can we take input on transportation?",
+      question: "How can I track my shipment with NALA Shipping?",
       answer:
-        "A digital interface the person causing the movement of goods uploads the relevant information prior to the commencement of movement of goods and generates e-way bill on the GST portal. Best service are provide us. simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.",
+        "NALA Shipping offers a user-friendly online tracking system that allows you to monitor your shipment's status in real-time. Simply enter your tracking number on our website, and you’ll receive detailed updates on your cargo's journey.",
     },
   ];
 

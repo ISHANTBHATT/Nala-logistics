@@ -152,28 +152,27 @@ import { Facebook, Twitter, Instagram, Youtube } from "lucide-react";
 import { motion } from "framer-motion";
 
 const quickLinks = [
+  { title: "Home", href: "#" },
   { title: "About", href: "#" },
   { title: "Services", href: "#" },
-  { title: "Blog", href: "#" },
-  { title: "FAQ", href: "#" },
-  { title: "Contact Us", href: "#" },
+  { title: "FAQs", href: "#" },
+  { title: "Contact", href: "#" },
 ];
 
 const services = [
-  { title: "Warehouse", href: "#" },
-  { title: "Air Freight", href: "#" },
-  { title: "Ocean Freight", href: "#" },
-  { title: "Road Freight", href: "#" },
-  { title: "Packaging", href: "#" },
+  { title: "Shipping", href: "#" },
+  { title: "NVOCC", href: "#" },
+  { title: "Maritime Consulting", href: "#" },
+  { title: "Cargo & Logistics", href: "#" },
 ];
 
-const community = [
-  { title: "Business Consulting", href: "#" },
-  { title: "Testimonials", href: "#" },
-  { title: "Track Your Shipment", href: "#" },
-  { title: "Privacy Policy", href: "#" },
-  { title: "Terms & Condition", href: "#" },
-];
+// const community = [
+//   { title: "Business Consulting", href: "#" },
+//   { title: "Testimonials", href: "#" },
+//   { title: "Track Your Shipment", href: "#" },
+//   { title: "Privacy Policy", href: "#" },
+//   { title: "Terms & Condition", href: "#" },
+// ];
 
 export default function Footer2() {
   return (
@@ -208,9 +207,9 @@ export default function Footer2() {
               viewport={{ once: true }}
             >
               <h2 className="text-white text-2xl md:text-4xl font-bold mb-4 md:mb-6">
-                Subscribe for offers
+                Obtain complimentary quotes
                 <br />
-                and news
+                for tailored solutions.
               </h2>
               <div className="flex flex-col md:flex-row gap-4 z-10">
                 <input
@@ -219,7 +218,7 @@ export default function Footer2() {
                   className="flex-1 px-4 py-2 md:py-3 rounded-xl text-sm md:text-base"
                 />
                 <button className="bg-[#545454] text-white px-6 py-2 md:px-8 md:py-3 rounded-xl hover:bg-[#3E3E3E] text-sm md:text-base">
-                  Subscribe Now
+                  Get Quote
                 </button>
               </div>
             </motion.div>
@@ -230,12 +229,12 @@ export default function Footer2() {
       <footer className="bg-[#545454] text-white pt-8 md:pt-16 pb-8">
         <div className="container mx-auto px-4">
           <motion.div
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-8 md:mb-12"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 md:gap-8 mb-8 md:mb-12"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
           >
-            <div>
+            <div className="flex col-span-2">
               <Image
                 src="/images/Logo_White.png"
                 alt="Ark"
@@ -244,24 +243,12 @@ export default function Footer2() {
                 className="mb-6 w-32 h-32"
               />
               <p className="text-gray-300 mb-6">
-                Many desktop publishing packages and web page editors now use
-                are dolra ipsum as their default .
+                Nala Shipping, founded in 2024 in Kenya, addresses the growing
+                need for reliable shipping and logistics in East Africa. The
+                company seeks to improve trade between the Indian Subcontinent,
+                the Middle East, and East Africa through transparent, integrated
+                solutions supported by advanced digital tools.
               </p>
-              <div className="flex space-x-4">
-                {[Facebook, Twitter, Instagram, Youtube].map((Icon, index) => (
-                  <motion.a
-                    key={index}
-                    initial={{ y: 20 }}
-                    whileInView={{ y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: index * 0.1 }}
-                    href="#"
-                    className="w-10 h-10 bg-[#228186] rounded flex items-center justify-center hover:bg-[#1A6266] transition-colors"
-                  >
-                    <Icon className="w-5 h-5" />
-                  </motion.a>
-                ))}
-              </div>
             </div>
 
             <div>
@@ -309,8 +296,8 @@ export default function Footer2() {
             </div>
 
             <div>
-              <h3 className="text-xl font-bold mb-6">Community</h3>
-              <ul className="space-y-4">
+              <h3 className="text-xl font-bold mb-6">Follow Us</h3>
+              {/* <ul className="space-y-4">
                 {community.map((item, index) => (
                   <motion.li
                     key={index}
@@ -327,7 +314,22 @@ export default function Footer2() {
                     </a>
                   </motion.li>
                 ))}
-              </ul>
+              </ul> */}
+              <div className="flex space-x-4">
+                {[Facebook, Twitter, Instagram].map((Icon, index) => (
+                  <motion.a
+                    key={index}
+                    initial={{ y: 20 }}
+                    whileInView={{ y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: index * 0.1 }}
+                    href="#"
+                    className="w-10 h-10 bg-[#228186] rounded flex items-center justify-center hover:bg-[#1A6266] transition-colors"
+                  >
+                    <Icon className="w-5 h-5" />
+                  </motion.a>
+                ))}
+              </div>
             </div>
             {/* {[0,1,2,3].map((colIdx) => (
               <motion.div
@@ -347,9 +349,16 @@ export default function Footer2() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
           >
-            <p className="text-sm md:text-base">
-              Copyright © 2022 by thewebmax All Rights Reserved.
-            </p>
+            <div className="text-sm md:text-base">
+              Copyright 2025. Website developed by{" "}
+              <a
+                class="underline hover:text-primary"
+                target="_blank"
+                href="https://apacedigitalcargo.com/"
+              >
+                Apace Digital Cargo
+              </a>
+            </div>
           </motion.div>
         </div>
       </footer>

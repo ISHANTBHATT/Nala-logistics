@@ -115,20 +115,22 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import Link from "next/link";
 
 const slides = [
   {
-    title: "The New Logistic Revolutions",
+    title: "Tailored Shipping and Logistics Solutions",
     subtitle: "Safety, quality, professionalism.",
     image: "/images/bg-1.jpg",
   },
   {
-    title: "Modern Delivery Solutions",
+    title:
+      "Spanning from East Africa to the Indian Subcontinent and the Middle East.",
     subtitle: "Fast, reliable, worldwide.",
     image: "/images/bg-4.jpg",
   },
   {
-    title: "Global Logistics Network",
+    title: "Providing Maritime and Logistics Solutions",
     subtitle: "Connected across continents.",
     image: "/images/bg-5.jpg",
   },
@@ -196,23 +198,25 @@ function Banner2() {
 
               {/* Content */}
               <div className="relative h-full flex items-center justify-center">
-                <div className="text-center text-white px-4 transform translate-z-50">
-                  <h1 className="text-5xl md:text-7xl font-bold mb-4 animate-fade-in-up">
+                <div className="text-center text-white px-4 transform translate-z-50 space-y-8">
+                  <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in-up">
                     {slide.title}
                   </h1>
-                  <p className="text-xl md:text-2xl mb-8 animate-fade-in-up animate-delay-200">
+                  {/* <p className="text-xl md:text-2xl mb-8 animate-fade-in-up animate-delay-200">
                     {slide.subtitle}
-                  </p>
+                  </p> */}
                   <div className="flex gap-4 justify-center animate-fade-in-up animate-delay-400 items-center">
-                    <button className="bg-[#228186] hover:bg-[#1A6266] text-white px-8 py-3 rounded-xl transition-colors">
-                      ABOUT US
-                    </button>
-                    <div className="">
+                    <Link href="/about">
+                      <button className="bg-[#228186] hover:bg-[#1A6266] text-white px-8 py-3 rounded-xl transition-colors">
+                        ABOUT US
+                      </button>
+                    </Link>
+                    {/* <div className="">
                       <p>or</p>
                     </div>
                     <button className="bg-white hover:bg-gray-100 text-gray-900 px-8 py-3 rounded-xl transition-colors">
                       CONTACT
-                    </button>
+                    </button> */}
                   </div>
                 </div>
               </div>

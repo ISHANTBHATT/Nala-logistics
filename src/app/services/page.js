@@ -1,6 +1,6 @@
 "use client";
 
-import { FileText, CombineIcon as Conveyor, Truck } from "lucide-react";
+import { Globe, Briefcase, FileText, Boxes, Truck, Ship } from "lucide-react";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
@@ -21,48 +21,71 @@ const logos = [
 const solutions = [
   {
     number: "01",
-    icon: FileText,
-    title: "Air Cargo",
+    icon: Ship,
+    title: "SHIPPING",
     description:
-      "Our aim is to optimize and improve your supply chain so that we can give you the best service",
+      "We will make certain that your vessel receives excellent care while at the port and that all cargo operations are conducted efficiently. You can trust that all the needs of your crew will be met in a sustainable and responsible way.",
   },
   {
     number: "02",
-    icon: Conveyor,
-    title: "Ocean Freight",
+    icon: Globe,
+    title: "NVOCC",
     description:
-      "We provide multiple drop off and pickup locations so you don't have to worry. And you should not face any kind...",
+      "We provide NVOCC services as intermediaries for shipping goods without owning ships. Our team consolidates shipments, issues bills of lading, and manages logistics internationally, negotiating vessel space for competitive rates and flexible options.",
+  },
+  {
+    number: "03",
+    icon: Briefcase,
+    title: "Maritime Consultancy",
+    description:
+      "We utilize our extensive network and digital resources to gather and examine datasets that ultimately benefit our customers. Our team offers valuable insights and expert analysis across all ports, terminals, systems, and the entire logistics ecosystem.",
+  },
+  // {
+  //   number: "04",
+  //   icon: FileText,
+  //   title: "Trucking",
+  //   description:
+  //     "Our aim is to optimize and improve your supply chain so that we can give you the best service",
+  // },
+  // {
+  //   number: "05",
+  //   icon: Conveyor,
+  //   title: "Warehousing",
+  //   description:
+  //     "We provide multiple drop off and pickup locations so you don't have to worry. And you should not face any kind...",
+  // },
+  // {
+  //   number: "06",
+  //   icon: Truck,
+  //   title: "Project Cargo",
+  //   description:
+  //     "A tracking number for the entire process, so that you can find the exact position, this process will help you",
+  // },
+];
+
+const service2 = [
+  {
+    number: "01",
+    icon: FileText,
+    title: "Customs Clearance",
+    description:
+      "NALA Shipping ensures that all required customs clearance procedures are completed accurately and without delay. Our dedicated team is committed to providing a seamless experience, allowing you to focus on your business while we handle the complexities of customs regulations.",
+  },
+  {
+    number: "02",
+    icon: Boxes,
+    title: "Project Cargo Handling",
+    description:
+      "We take great pride in our expertise in managing OOG and breakbulk shipments. Our team ensures that these shipments are processed safely and with the utmost professionalism. This commitment to quality sets us apart in the industry.",
   },
   {
     number: "03",
     icon: Truck,
-    title: "Customs",
+    title: "Trucking & Forwarding",
     description:
-      "A tracking number for the entire process, so that you can find the exact position, this process will help you",
-  },
-  {
-    number: "04",
-    icon: FileText,
-    title: "Trucking",
-    description:
-      "Our aim is to optimize and improve your supply chain so that we can give you the best service",
-  },
-  {
-    number: "05",
-    icon: Conveyor,
-    title: "Warehousing",
-    description:
-      "We provide multiple drop off and pickup locations so you don't have to worry. And you should not face any kind...",
-  },
-  {
-    number: "06",
-    icon: Truck,
-    title: "Project Cargo",
-    description:
-      "A tracking number for the entire process, so that you can find the exact position, this process will help you",
+      "Our trucking and freight forwarding services ensure seamless operations to the cargo's final destination, connecting various transportation modes. We emphasize transparency and provide customers with a single vendor and point of contact throughout the process.",
   },
 ];
-
 export default function SolutionsCards() {
   return (
     <>
@@ -98,13 +121,15 @@ export default function SolutionsCards() {
         </nav>
       </div>
       <div className="w-full max-w-7xl mx-auto px-4 py-16">
-        <h1 className="text-4xl font-bold text-[#0a2342] mb-4">
-          Has a wide range of solutions
-        </h1>
+        <h1 className="text-4xl font-bold text-[#0a2342] mb-4">OUR OFFERING</h1>
         <p className="text-gray-600 mb-12 max-w-2xl">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry the standard dummy text ever since the when an printer took.
+          We offer an extensive array of services, encompassing everything from
+          maritime solutions to logistics assistance.
         </p>
+
+        <h1 className="text-4xl font-bold text-primary mb-10">
+          Maritime Solutions
+        </h1>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 ">
           {solutions.map((solution, index) => (
@@ -125,10 +150,7 @@ export default function SolutionsCards() {
                 <p className="text-gray-600 mb-6 text-center">
                   {solution.description}
                 </p>
-                <button className="w-10 h-10 border border-gray-200 rounded flex items-center justify-center transition-colors duration-300 hover:border-[#228186] hover:text-[#228186]">
-                  {/* <span className="sr-only">
-                    Learn more about {solution.title}
-                  </span> */}
+                {/* <button className="w-10 h-10 border border-gray-200 rounded flex items-center justify-center transition-colors duration-300 hover:border-[#228186] hover:text-[#228186]">
                   <svg
                     width="24"
                     height="24"
@@ -145,7 +167,50 @@ export default function SolutionsCards() {
                       strokeLinejoin="round"
                     />
                   </svg>
-                </button>
+                </button> */}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <h1 className="text-4xl font-bold text-secondary mb-10">
+          Logistics Solutions
+        </h1>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 ">
+          {service2.map((solution, index) => (
+            <div key={index} className="relative group p-8 py-20">
+              <div className="absolute -top-10  text-[150px] font-bold text-gray-100 transition-colors duration-300 group-hover:text-[#ff6b00] select-none z-10">
+                {solution.number}
+              </div>
+              <div className="relative flex flex-col items-center justify-center py-14 px-8  rounded-xl transition-all duration-300 hover:bg-white hover:shadow-[0_0_50px_#228186] ">
+                <div className="bg-blue-50 rounded-full w-28 h-28 flex items-center justify-center mb-6">
+                  <solution.icon className="w-16 h-16 text-[#228186]" />
+                </div>
+                <h3 className="text-xl font-semibold text-[#0a2342] mb-4">
+                  {solution.title}
+                </h3>
+                <p className="text-gray-600 mb-6 text-center">
+                  {solution.description}
+                </p>
+                {/* <button className="w-10 h-10 border border-gray-200 rounded flex items-center justify-center transition-colors duration-300 hover:border-[#228186] hover:text-[#228186]">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-5 h-5"
+                  >
+                    <path
+                      d="M5 12H19M19 12L12 5M19 12L12 19"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </button> */}
               </div>
             </div>
           ))}

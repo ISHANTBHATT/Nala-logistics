@@ -174,6 +174,7 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Hero2() {
   return (
@@ -222,26 +223,27 @@ export default function Hero2() {
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-2 text-stroke-orange">
             WHY CHOOSE US
           </h2>
-          <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl font-bold text-[#002B5B] mb-4 md:mb-6">
-            We Are Professional
-            <br className="hidden sm:block" />
-            Logistics & cargo Agency
+          <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-bold text-[#002B5B] mb-4 md:mb-6">
+            We are a professional company specializing in Maritime and Logistics
+            Solutions.
+            {/* <br className="hidden sm:block" />
+            in Maritime and Logistics Solutions. */}
           </h3>
           <p className="text-sm sm:text-base md:text-lg text-gray-600 mb-4 md:mb-6">
-            Sed ut perspiciatis unde omnis iste natus error volup tatem
-            accusantium dolorem que laudantium, totam rem aperiam, eaque ipsa
-            illo inventore.
+            Nala Shipping, established in 2024 in Kenya, meets the rising demand
+            for reliable shipping and logistics across East Africa.
           </p>
           <p className="text-sm sm:text-base md:text-lg text-gray-600 mb-6 md:mb-8">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium dolorem que laudantium, totam rem aperiam, que ipsa quae
-            ab illo inventore veritatis quasi architecto beatae itae dicta sunt
-            explicabo.
+            The company aims to enhance trade between the Indian Subcontinent,
+            the Middle East, and East Africa by providing transparent,
+            integrated solutions backed by advanced digital tools.
           </p>
           <div className="flex items-center gap-4 sm:gap-6">
-            <button className="bg-[#228186] text-white px-5 py-2 sm:px-6 sm:py-3 md:px-8 md:py-3 rounded-xl hover:bg-[#1A6266] transition-colors text-sm sm:text-base">
-              Learn More
-            </button>
+            <Link href="/about">
+              <button className="bg-[#228186] text-white px-5 py-2 sm:px-6 sm:py-3 md:px-8 md:py-3 rounded-xl hover:bg-[#1A6266] transition-colors text-sm sm:text-base">
+                Learn More
+              </button>
+            </Link>
           </div>
         </motion.div>
       </div>

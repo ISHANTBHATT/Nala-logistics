@@ -158,25 +158,25 @@ import { motion } from "framer-motion";
 const services = [
   {
     number: "01",
-    title: "Road Freight",
+    title: "Maritime Services",
     icon: Truck,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+      "Our maritime solutions encompass a range of services and technologies designed to tackle the challenges faced by the maritime industry, ultimately improving efficiency, safety, and sustainability.",
   },
   {
     number: "02",
-    title: "Shipping Freight",
+    title: "Logistics Solutions",
     icon: Ship,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+      "Our Logistics Services encompass a range of functions, including planning, transportation management, warehousing, inventory control, order fulfilment, and distribution.",
   },
-  {
-    number: "03",
-    title: "Air Freight",
-    icon: Plane,
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
-  },
+  // {
+  //   number: "03",
+  //   title: "Air Freight",
+  //   icon: Plane,
+  //   description:
+  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+  // },
 ];
 
 export default function Services2() {
@@ -196,9 +196,9 @@ export default function Services2() {
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay: 1 }}
-        className="text-3xl md:text-5xl font-bold text-[#002B5B] mb-6"
+        className="text-3xl md:text-4xl font-bold text-[#002B5B] mb-6"
       >
-        Specialist Logistics Services
+        Expert in Providing Maritime and Logistics Solutions
       </motion.h1>
       <motion.p
         initial={{ opacity: 0, y: 50 }}
@@ -207,8 +207,8 @@ export default function Services2() {
         transition={{ duration: 0.5, delay: 1.2 }}
         className="text-gray-600 max-w-3xl mx-auto mb-12"
       >
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry the standard dummy text ever since the when an printer took.
+        We provide a comprehensive range of services, from maritime solutions to
+        logistics support.
       </motion.p>
 
       <div className="grid md:grid-cols-2 gap-8 items-center px-4 lg:px-20">
@@ -224,9 +224,9 @@ export default function Services2() {
             >
               <div className="w-2 h-24 bg-primary mr-4"></div>
               <div className="flex p-4 gap-4 items-center">
-                <service.icon className="w-16 h-16 text-[#228186] " />
+                <service.icon className="w-24 h-24 text-[#228186] " />
                 <div className="flex-col items-center gap-4 mb-2 py-6">
-                  <h3 className="text-xl font-bold text-[#002B5B]">
+                  <h3 className="text-2xl font-bold text-[#002B5B]">
                     <span className="text-[#228186] text-2xl font-bold">
                       {service.number}.
                     </span>{" "}

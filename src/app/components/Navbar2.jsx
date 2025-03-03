@@ -189,21 +189,21 @@ export function Navbar2() {
       name: "SERVICES",
       link: "services",
     },
-    {
-      id: 4,
-      name: "INDUSTRIES SERVED",
-      link: "industries",
-    },
+    // {
+    //   id: 4,
+    //   name: "INDUSTRIES SERVED",
+    //   link: "industries",
+    // },
     {
       id: 5,
       name: "FAQs",
       link: "faqs",
     },
-    {
-      id: 6,
-      name: "CAREERS",
-      link: "careers",
-    },
+    // {
+    //   id: 6,
+    //   name: "CAREERS",
+    //   link: "careers",
+    // },
     {
       id: 7,
       name: "CONTACT",

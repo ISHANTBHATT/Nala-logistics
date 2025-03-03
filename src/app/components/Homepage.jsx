@@ -19,7 +19,7 @@ function Homepage() {
       <Features2 />
       <AllServices2 />
       <Company2 />
-      <Testimonials2 />
+      {/* <Testimonials2 /> */}
       {/* <Footer2 /> */}
     </div>
   );

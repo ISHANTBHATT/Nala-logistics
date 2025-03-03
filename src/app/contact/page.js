@@ -103,7 +103,7 @@ function Page() {
           <div className="flex-1 min-w-[300px] h-[400px]">
             {/* Replace the src below with your own Google Maps embed link */}
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.8926969686764!2d-73.99008188432444!3d40.67792927933511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f0cb4f6f490fadb%3A0xXXXXXXXXXXXXXXX!2sGowanus%2C%20Brooklyn%2C%20NY!5e0!3m2!1sen!2sus!4v1615839045635!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127357.68521556359!2d39.58386093984297!3d-4.035184590614036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x184012e78ec02c7d%3A0xcb618bbc35d0db5a!2sMombasa%2C%20Kenya!5e0!3m2!1sen!2sin!4v1741003304694!5m2!1sen!2sin"
               allowFullScreen
               loading="lazy"
               className="w-full h-full rounded border-0"
@@ -117,7 +117,7 @@ function Page() {
             <span className="text-3xl text-orange-500">&#128222;</span>
             <div>
               <p className="font-semibold">Phone</p>
-              <p>+58 (1) 123-456-7890</p>
+              <p>+254 740 211008</p>
             </div>
           </div>
 
@@ -125,7 +125,7 @@ function Page() {
             <span className="text-3xl text-orange-500">&#9993;</span>
             <div>
               <p className="font-semibold">Email</p>
-              <p>info@carguy.com</p>
+              <p>nalashipping@protonmail.com</p>
             </div>
           </div>
 
@@ -133,7 +133,7 @@ function Page() {
             <span className="text-3xl text-orange-500">&#128205;</span>
             <div>
               <p className="font-semibold">Location</p>
-              <p>8273 NW 98th, Florida 33195 USA</p>
+              <p>Nala Shipping Limited Mombasa, Kenya</p>
             </div>
           </div>
         </div>
