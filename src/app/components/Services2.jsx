@@ -246,20 +246,31 @@ export default function Services2() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <Image
-            src="/images/t3.png"
+          {/* <Image
+            src="/images/ship.png"
             alt="Logistics Truck"
             fill
             className="object-contain rounded-lg z-10"
           />
-          <div className="absolute bottom-20 right-0 w-full h-20">
+          <div className="absolute bottom-20 right-0 w-full h-40">
             <Image
-              src="/images/road.png"
+              src="/images/ocean-waves.png"
               alt="Road"
               fill
               className="object-cover"
             />
-          </div>
+          </div> */}
+          <motion.video
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 2 }}
+            autoPlay
+            loop
+            muted
+            className="absolute top-0 left-0 w-full h-full object-cover z-0"
+          >
+            <source src="videos/1.mp4" type="video/mp4" />
+          </motion.video>
         </motion.div>
       </div>
     </section>
