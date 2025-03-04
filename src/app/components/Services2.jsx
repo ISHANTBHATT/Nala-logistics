@@ -151,7 +151,7 @@
 // }
 
 "use client";
-import { Truck, Ship, Plane } from "lucide-react";
+import { Truck, Ship, Plane, Warehouse } from "lucide-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -159,14 +159,14 @@ const services = [
   {
     number: "01",
     title: "Maritime Services",
-    icon: Truck,
+    icon: Ship,
     description:
       "Our maritime solutions encompass a range of services and technologies designed to tackle the challenges faced by the maritime industry, ultimately improving efficiency, safety, and sustainability.",
   },
   {
     number: "02",
     title: "Logistics Solutions",
-    icon: Ship,
+    icon: Warehouse,
     description:
       "Our Logistics Services encompass a range of functions, including planning, transportation management, warehousing, inventory control, order fulfilment, and distribution.",
   },

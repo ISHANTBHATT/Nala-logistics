@@ -121,7 +121,7 @@ const slides = [
   {
     title: "Tailored Shipping and Logistics Solutions",
     subtitle: "Safety, quality, professionalism.",
-    image: "/images/bg-1.jpg",
+    image: "/images/8.jpg",
   },
   {
     title:
@@ -132,7 +132,7 @@ const slides = [
   {
     title: "Providing Maritime and Logistics Solutions",
     subtitle: "Connected across continents.",
-    image: "/images/bg-5.jpg",
+    image: "/images/6.jpg",
   },
 ];
 
@@ -193,7 +193,7 @@ function Banner2() {
                   alt={slide.title}
                   className="h-full w-full object-cover"
                 />
-                <div className="absolute inset-0 bg-black/60" />
+                <div className="absolute inset-0  bg-gradient-to-t from-black/60  to-transparent " />
               </div>
 
               {/* Content */}

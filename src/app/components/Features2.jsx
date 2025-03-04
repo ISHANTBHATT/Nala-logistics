@@ -218,28 +218,28 @@ import Image from "next/image";
 const features = [
   {
     number: "01",
-    image: "/images/2.jpg",
+    image: "/images/v1.jpg",
     title: "Depot Services",
     description:
       "Our aim is to optimize and improve your supply chain so that we can give you the best service",
   },
   {
     number: "02",
-    image: "/images/bg-1.jpg",
+    image: "/images/v2.jpg",
     title: "Warehousing",
     description:
       "We provide multiple drop-off and pickup locations so you don't have to worry. And you should not face any kind...",
   },
   {
     number: "03",
-    image: "/images/bg-4.jpg",
+    image: "/images/v3.jpg",
     title: "Surveys & Inspections",
     description:
       "A tracking number for the entire process, so that you can find the exact position. It will help you.",
   },
   {
     number: "04",
-    image: "/images/contact_banner3.jpg",
+    image: "/images/v4.jpg",
     title: "Tally Services",
     description:
       "A tracking number for the entire process, so that you can find the exact position. It will help you.",
