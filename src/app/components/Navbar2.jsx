@@ -252,7 +252,7 @@ export function Navbar2() {
             <div className="flex items-center gap-4">
               <div className="flex items-center gap-2 text-white/80 ">
                 <Phone size={18} />
-                <span className="text-sm md:text-base">(+58) 123-456-7890</span>
+                <span className="text-sm md:text-base">+254 740 211008</span>
               </div>
               <Button
                 variant="destructive"
