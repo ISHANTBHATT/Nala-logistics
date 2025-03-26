@@ -455,9 +455,11 @@ export function Navbar2() {
                 <Phone size={18} />
                 <span className="text-sm md:text-base">+254 740 211008</span>
               </div>
-              <Button className="bg-[#228186] hover:bg-[#1A6266] rounded-xl text-white/80">
-                Contact
-              </Button>
+              <Link href="/contact">
+                <Button className="bg-[#228186] hover:bg-[#1A6266] rounded-xl text-white/80">
+                  Contact
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
