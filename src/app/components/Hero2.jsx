@@ -190,7 +190,7 @@ export default function Hero2() {
           {/* First Image */}
           <div className="absolute top-0 left-0 w-48 sm:w-56 md:w-64 lg:w-80 lg:h-96 h-64 sm:h-72 md:h-80 z-20 shadow-xl">
             <Image
-              src="/images/pic7.jpg"
+              src="/images/pic11.jpg"
               alt="Delivery Person"
               fill
               className="object-cover rounded-lg"
@@ -204,7 +204,7 @@ export default function Hero2() {
           {/* Second Image */}
           <div className="absolute bottom-0 md:-bottom-20 lg:-bottom-32 right-0 w-56 sm:w-64 md:w-72 lg:w-96 h-64 sm:h-72 md:h-80 lg:h-96">
             <Image
-              src="/images/pic8.jpg"
+              src="/images/pic12.jpg"
               alt="Warehouse Manager"
               fill
               className="object-cover rounded-lg"
@@ -220,7 +220,7 @@ export default function Hero2() {
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-2 text-stroke-orange">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-primary mb-2 ">
             WHY CHOOSE US
           </h2>
           <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-bold text-[#002B5B] mb-4 md:mb-6">

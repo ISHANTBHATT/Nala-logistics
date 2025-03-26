@@ -1182,7 +1182,7 @@ const services = [
 
 export default function AllServices2() {
   return (
-    <div className="h-full bg-gradient-to-b from-white to-gray-50">
+    <div className="h-full bg-gradient-to-b from-white to-gray-50 overflow-hidden">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -1195,7 +1195,7 @@ export default function AllServices2() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.8 }}
-            className="text-5xl font-bold tracking-tight text-white bg-clip-text text-transparent mb-4 text-stroke-orange"
+            className="text-5xl font-bold tracking-tight text-primary bg-clip-text  mb-4"
           >
             OUR OFFERING
           </motion.h2>
@@ -1204,7 +1204,7 @@ export default function AllServices2() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 1 }}
-            className="text-3xl font-bold text-[#002B5B] mb-6"
+            className="text-2xl md:text-3xl font-bold text-[#002B5B] mb-6"
           >
             We offer an extensive array of services, encompassing everything
             from maritime solutions to logistics assistance.

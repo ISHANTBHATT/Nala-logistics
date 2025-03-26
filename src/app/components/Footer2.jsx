@@ -352,7 +352,7 @@ export default function Footer2() {
             <div className="text-sm md:text-base">
               Copyright 2025. Website developed by{" "}
               <a
-                class="underline hover:text-primary"
+                className="underline hover:text-primary"
                 target="_blank"
                 href="https://apacedigitalcargo.com/"
               >

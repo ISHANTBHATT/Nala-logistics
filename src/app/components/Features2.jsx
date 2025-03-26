@@ -232,14 +232,14 @@ const features = [
   },
   {
     number: "03",
-    image: "/images/v3.jpg",
+    image: "/images/pic14.jpg",
     title: "Surveys & Inspections",
     description:
       "A tracking number for the entire process, so that you can find the exact position. It will help you.",
   },
   {
     number: "04",
-    image: "/images/v4.jpg",
+    image: "/images/pic9.jpg",
     title: "Tally Services",
     description:
       "A tracking number for the entire process, so that you can find the exact position. It will help you.",
@@ -261,7 +261,7 @@ export default function Features2() {
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay: 0.8 }}
-        className="text-4xl md:text-6xl font-bold text-white text-stroke-orange mb-2 text-center py-10"
+        className="text-4xl md:text-6xl font-bold text-primary mb-2 text-center py-10"
       >
         VALUE ADDED SERVICES
       </motion.h2>

@@ -13,7 +13,7 @@ export default function AboutSection() {
         <div className="space-y-6 flex flex-col items-center">
           <div className="relative h-[500px] w-full md:w-[500px] rounded-3xl overflow-hidden">
             <Image
-              src="/images/about.png"
+              src="/images/pic13.jpg"
               alt="Workers in safety gear"
               fill
               className="object-cover"

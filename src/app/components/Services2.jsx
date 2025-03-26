@@ -187,7 +187,7 @@ export default function Services2() {
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay: 0.8 }}
-        className="text-4xl md:text-6xl font-bold text-white text-stroke-orange mb-2"
+        className="text-4xl md:text-6xl font-bold text-primary mb-2"
       >
         WHAT WE DO!
       </motion.h2>

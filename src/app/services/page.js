@@ -89,7 +89,7 @@ const service2 = [
 export default function SolutionsCards() {
   return (
     <>
-      <div className="relative min-h-[400px] flex items-center justify-start">
+      <div className="relative min-h-[400px] flex items-center justify-start mt-20">
         {/* Background with overlay */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -216,7 +216,7 @@ export default function SolutionsCards() {
           ))}
         </div>
       </div>
-      <div className="container mx-auto max-w-7xl flex flex-col  text-center">
+      {/* <div className="container mx-auto max-w-7xl flex flex-col  text-center">
         <h2 className="text-5xl font-semibold text-[#228186] mb-2">
           Our Clients
         </h2>
@@ -261,7 +261,7 @@ export default function SolutionsCards() {
             ))}
           </Swiper>
         </motion.div>
-      </div>
+      </div> */}
     </>
   );
 }

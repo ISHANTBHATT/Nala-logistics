@@ -204,7 +204,7 @@ export default function Company2() {
     },
   ];
   return (
-    <main className="h-full py-10 md:py-20 px-4 lg:px-20 xl:px-40">
+    <main className="h-full py-10 md:py-20 px-4 lg:px-20 xl:px-40 overflow-hidden">
       <section className="relative">
         <motion.div
           className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8"

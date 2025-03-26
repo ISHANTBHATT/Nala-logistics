@@ -87,7 +87,7 @@ export default function Faq() {
 
   return (
     <>
-      <div className="relative min-h-[400px] flex items-center justify-start">
+      <div className="relative min-h-[400px] flex items-center justify-start mt-20">
         {/* Background with overlay */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
