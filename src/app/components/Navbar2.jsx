@@ -527,7 +527,7 @@ export function Navbar2() {
           <Menu
             className={cn(
               "lg:hidden  hover:text-primary w-6 h-6",
-              scrolled ? " text-gray-800" : "text-white"
+              scrolled || !isHomePage ? " text-gray-800" : "text-white"
             )}
             onClick={() => setMenuOpen(!menuOpen)}
           />
