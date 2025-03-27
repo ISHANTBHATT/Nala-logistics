@@ -185,15 +185,15 @@ export default function Footer2() {
           viewport={{ once: true }}
         >
           <motion.div
-            className="absolute right-1/2 bottom-0 w-full md:w-1/3 mb-6 md:mb-0 z-0"
+            className="absolute right-1/2 bottom-0 w-full md:w-1/3 mb-6 md:mb-0 z-0 mr-32"
             initial={{ x: 100 }}
             whileInView={{ x: 0 }}
             viewport={{ once: true }}
           >
             <Image
-              src="/images/man.png"
+              src="/images/man2.png"
               alt="Delivery Person"
-              width={300}
+              width={400}
               height={300}
               className="object-contain h-[200px] md:h-auto"
             />

@@ -479,7 +479,7 @@ export function Navbar2() {
                   // height={1500}
                   className="w-28 h-auto"
                 />
-                <span className="text-2xl font-bold text-white">
+                <span className="text-2xl font-bold text-primary">
                   NALA SHIPPING
                 </span>
               </>
