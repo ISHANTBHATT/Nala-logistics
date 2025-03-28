@@ -472,11 +472,11 @@ export function Navbar2() {
           <Link href="/" className="flex items-center">
             {scrolled ? (
               <>
-                <img
-                  src="/images/logo.png"
+                <Image
+                  src="/images/logo1.png"
                   alt="Ark"
-                  // width={1500}
-                  // height={1500}
+                  width={1500}
+                  height={1500}
                   className="w-28 h-auto"
                 />
                 <span className="text-2xl font-bold text-primary">

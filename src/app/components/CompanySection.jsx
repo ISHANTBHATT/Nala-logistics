@@ -5,6 +5,7 @@ import { Settings, GitBranch, Handshake, FileCheck } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function CompanySection() {
   return (
@@ -86,9 +87,11 @@ export default function CompanySection() {
             </h3>
             <div className="flex gap-2">
               <Input placeholder="Enter your Email ID" className="bg-white" />
-              <Button className="bg-primary hover:bg-teal-800 text-gray-900 px-8">
-                Submit
-              </Button>
+              <Link href="/contact">
+                <button className="bg-primary hover:bg-teal-800 text-gray-900 px-8 h-full">
+                  Submit
+                </button>
+              </Link>
             </div>
           </div>
         </div>

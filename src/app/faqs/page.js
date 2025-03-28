@@ -122,7 +122,7 @@ export default function Faq() {
       <section className="py-16 px-4">
         <div className="w-full mx-auto px-20 ">
           <div>
-            <h2 className="text-4xl md:text-4xl font-bold text-white mb-2 text-stroke-orange text-center">
+            <h2 className="text-4xl md:text-4xl font-bold text-primary mb-2  text-center">
               FAQ's
             </h2>
             <h3 className="text-muted-foreground mb-2 text-center">
