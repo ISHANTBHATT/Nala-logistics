@@ -150,6 +150,7 @@
 import Image from "next/image";
 import { Facebook, Twitter, Instagram, Youtube } from "lucide-react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const quickLinks = [
   { title: "Home", href: "#" },
@@ -217,9 +218,11 @@ export default function Footer2() {
                   placeholder="Enter Your Email"
                   className="flex-1 px-4 py-2 md:py-3 rounded-xl text-sm md:text-base"
                 />
-                <button className="bg-[#545454] text-white px-6 py-2 md:px-8 md:py-3 rounded-xl hover:bg-[#3E3E3E] text-sm md:text-base">
-                  Get Quote
-                </button>
+                <Link href="/contact">
+                  <button className="bg-[#545454] text-white px-6 py-2 md:px-8 md:py-3 rounded-xl hover:bg-[#3E3E3E] text-sm md:text-base">
+                    Get Quote
+                  </button>
+                </Link>
               </div>
             </motion.div>
           </div>

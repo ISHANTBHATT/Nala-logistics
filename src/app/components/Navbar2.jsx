@@ -492,7 +492,12 @@ export function Navbar2() {
                   height={1000}
                   className="w-28 h-20"
                 />
-                <span className="text-2xl font-bold text-white/80">
+                <span
+                  className={cn(
+                    "text-2xl font-bold ",
+                    !isHomePage ? "text-primary" : "text-white/80"
+                  )}
+                >
                   NALA SHIPPING
                 </span>
               </>
