@@ -237,13 +237,13 @@ export default function Footer2() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
           >
-            <div className="flex col-span-2">
+            <div className="flex flex-col md:flex-row col-span-2  items-center">
               <Image
-                src="/images/Logo_White.png"
+                src="/images/logo1_white.png"
                 alt="Ark"
                 width={200}
                 height={60}
-                className="mb-6 w-32 h-32"
+                className="mb-6 w-40 h-32"
               />
               <p className="text-gray-300 mb-6">
                 Nala Shipping, founded in 2024 in Kenya, addresses the growing
