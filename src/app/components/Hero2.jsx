@@ -188,7 +188,7 @@ export default function Hero2() {
           transition={{ duration: 0.8 }}
         >
           {/* First Image */}
-          <div className="absolute top-0 left-0 w-48 sm:w-56 md:w-64 lg:w-80 lg:h-96 h-64 sm:h-72 md:h-80 z-20 shadow-xl">
+          <div className="absolute top-0 left-0 w-48 sm:w-72 md:w-64 lg:w-80 lg:h-96 h-64 sm:h-72 md:h-80 z-20 shadow-xl">
             <Image
               src="/images/pic11.jpg"
               alt="Delivery Person"
@@ -199,10 +199,10 @@ export default function Hero2() {
           </div>
 
           {/* White Background */}
-          <div className="absolute top-8 sm:top-12 left-6 sm:left-8 md:left-12 lg:left-20 w-48 sm:w-56 md:w-64 lg:w-72 lg:h-96 h-64 sm:h-72 md:h-80 z-10 bg-white shadow-2xl shadow-[#228186]" />
+          <div className="absolute top-8 sm:top-12 left-6 sm:left-8 md:left-12 lg:left-20 w-48 sm:w-72 md:w-64 lg:w-72 lg:h-96 h-64 sm:h-72 md:h-80 z-10 bg-white shadow-2xl shadow-[#228186]" />
 
           {/* Second Image */}
-          <div className="absolute bottom-0 md:-bottom-20 lg:-bottom-32 right-0 w-56 sm:w-64 md:w-72 lg:w-96 h-64 sm:h-72 md:h-80 lg:h-96">
+          <div className="absolute bottom-0 md:-bottom-20 lg:bottom-32 right-0 w-56 sm:w-72 md:w-72 lg:w-96 h-64 sm:h-72 md:h-80 lg:h-96 z-20">
             <Image
               src="/images/pic12.jpg"
               alt="Warehouse Manager"
@@ -237,6 +237,17 @@ export default function Hero2() {
             The company aims to enhance trade between the Indian Subcontinent,
             the Middle East, and East Africa by providing transparent,
             integrated solutions backed by advanced digital tools.
+          </p>
+          <p className="text-sm sm:text-base md:text-lg text-gray-600 mb-6 md:mb-8">
+            Nala Shipping Ltd is a trusted agency that represents our liner
+            customers with the utmost care, professionalism, and transparency.
+            We go above and beyond to ensure that their assets and interests are
+            fully protected, providing seamless support across East Africa. From
+            managing port operations to coordinating logistics and navigating
+            local regulations, we ensure that our clients' shipments move
+            smoothly and efficiently. Our commitment to building long-term
+            partnerships means we’re always focused on delivering reliable,
+            tailored solutions that meet the unique challenges of the region.
           </p>
           <div className="flex items-center gap-4 sm:gap-6">
             <Link href="/about">

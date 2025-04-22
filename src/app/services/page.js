@@ -24,14 +24,14 @@ const solutions = [
     icon: Ship,
     title: "SHIPPING",
     description:
-      "We will make certain that your vessel receives excellent care while at the port and that all cargo operations are conducted efficiently. You can trust that all the needs of your crew will be met in a sustainable and responsible way.",
+      "As the appointed agents for your liner, Nala Shipping ensures that your vessel receives the highest level of care while in port, with all cargo operations carried out efficiently. We are committed to meeting the needs of your crew in a responsible and sustainable manner, providing peace of mind that every aspect of your operation is handled seamlessly.",
   },
   {
     number: "02",
     icon: Globe,
     title: "NVOCC",
     description:
-      "We provide NVOCC services as intermediaries for shipping goods without owning ships. Our team consolidates shipments, issues bills of lading, and manages logistics internationally, negotiating vessel space for competitive rates and flexible options.",
+      "We provide dedicated agency services to NVOCCs, acting on your behalf to ensure transparent, reliable, and efficient operations. Our team safeguards your interests, coordinates cargo movements, and facilitates clear, consistent communication with all stakeholders. By representing NVOCCs across the region, we help protect your assets, streamline port processes, and support your global logistics commitments with professionalism and accountability.",
   },
   {
     number: "03",

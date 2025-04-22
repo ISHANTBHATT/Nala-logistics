@@ -404,7 +404,7 @@ export function Navbar2() {
     { id: 1, name: "HOME", link: "/" },
     { id: 2, name: "ABOUT", link: "/about" },
     { id: 3, name: "SERVICES", link: "/services" },
-    { id: 5, name: "FAQs", link: "/faqs" },
+    { id: 5, name: "INCOTERMS", link: "/incoterms" },
     { id: 7, name: "CONTACT", link: "/contact" },
   ];
 

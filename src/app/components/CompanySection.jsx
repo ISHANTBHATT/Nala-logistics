@@ -22,10 +22,16 @@ export default function CompanySection() {
                 Our Core Values
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Nala Shipping, like many successful companies, likely upholds a
-                set of core values that guide its operations and interactions
-                with stakeholders. While specific values can vary, typical core
-                values for a shipping company might include:
+                At Nala Shipping, our core values drive everything we do. We are
+                committed to delivering exceptional agency and logistics
+                services across East Africa with a focus on reliability,
+                transparency, and customer satisfaction. We pride ourselves on
+                integrity, ensuring smooth and efficient operations that meet
+                the highest standards of safety and compliance. By fostering
+                long-term relationships, embracing innovation, and responding
+                with agility to market needs, we strive to be your trusted
+                partner in navigating the complexities of the region's dynamic
+                logistics landscape.
               </p>
             </div>
           </div>

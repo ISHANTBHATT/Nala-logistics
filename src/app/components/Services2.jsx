@@ -269,7 +269,7 @@ export default function Services2() {
             muted
             className="absolute top-0 left-0 w-full h-full object-cover z-0"
           >
-            <source src="videos/1.mp4" type="video/mp4" />
+            <source src="/videos/1.mp4" type="video/mp4" />
           </motion.video>
         </motion.div>
       </div>
