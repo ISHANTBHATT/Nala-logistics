@@ -149,7 +149,7 @@ export default function Resources() {
       <div className="flex min-h-screen flex-col">
         {/* Hero Section */}
         <section className="w-full py-12 md:py-24 lg:py-32 bg-[#228186] text-white">
-          <div className="container px-4 md:px-6">
+          <div className="container px-4 md:px-6 mx-auto">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
@@ -166,7 +166,7 @@ export default function Resources() {
 
         {/* Introduction */}
         <section className="w-full py-12 md:py-16 lg:py-20">
-          <div className="container px-4 md:px-6">
+          <div className="container px-4 md:px-6 mx-auto">
             <div className="mx-auto max-w-[800px] space-y-6">
               <h2 className="text-2xl font-bold tracking-tight">
                 Introduction
@@ -196,8 +196,8 @@ export default function Resources() {
         </section>
 
         {/* Incoterms Tabs */}
-        <section className="w-full py-12 md:py-16 lg:py-20 bg-white ">
-          <div className="container px-4 md:px-6">
+        <section className="w-full  bg-white ">
+          <div className="container px-4 md:px-6 mx-auto">
             <Tabs defaultValue="any-mode" className="mx-auto max-w-[800px]">
               {/* <div className="flex justify-center mb-8">
                 <TabsList className="bg-[#228186]/10">
@@ -225,17 +225,10 @@ export default function Resources() {
                 </TabsList>
               </div> */}
 
-              <TabsList className="flex w-full bg-[#228186]/10">
+              <TabsList className="flex w-full bg-[#228186]/10 p-4 h-14">
                 <TabsTrigger
                   value="any-mode"
-                  className="
-        flex-1                /* equal width */
-        flex items-center justify-center gap-1
-        px-2 py-1             /* tighter padding */
-        text-xs sm:text-sm    /* responsive text */
-        data-[state=active]:bg-[#228186]
-        data-[state=active]:text-white
-      "
+                  className=" flex-1 flex items-center justify-center gap-1 p-2 text-xs sm:text-sm data-[state=active]:bg-[#228186] data-[state=active]:text-white"
                 >
                   <Truck className="h-4 w-4" />
                   <span>Any Mode of Transport</span>
@@ -243,12 +236,7 @@ export default function Resources() {
 
                 <TabsTrigger
                   value="sea-transport"
-                  className="
-        flex-1 flex items-center justify-center gap-1
-        px-2 py-1 text-xs sm:text-sm
-        data-[state=active]:bg-[#228186]
-        data-[state=active]:text-white
-      "
+                  className="flex-1 flex items-center justify-center gap-1 p-2 text-xs sm:text-sm data-[state=active]:bg-[#228186] data-[state=active]:text-white"
                 >
                   <Ship className="h-4 w-4" />
                   <span>Sea Transport</span>
@@ -256,12 +244,7 @@ export default function Resources() {
 
                 <TabsTrigger
                   value="additional-terms"
-                  className="
-        flex-1 flex items-center justify-center gap-1
-        px-2 py-1 text-xs sm:text-sm
-        data-[state=active]:bg-[#228186]
-        data-[state=active]:text-white
-      "
+                  className="flex-1 flex items-center justify-center gap-1 p-2 text-xs sm:text-sm data-[state=active]:bg-[#228186] data-[state=active]:text-white"
                 >
                   <Package className="h-4 w-4" />
                   <span>Additional Terms</span>
@@ -545,7 +528,7 @@ export default function Resources() {
 
         {/* Other Considerations */}
         <section className="w-full py-12 md:py-16 lg:py-20">
-          <div className="container px-4 md:px-6">
+          <div className="container px-4 md:px-6 mx-auto">
             <div className="mx-auto max-w-[800px] space-y-6">
               <h2 className="text-2xl font-bold tracking-tight">
                 Other Terms used in Container Shipping
@@ -573,7 +556,7 @@ export default function Resources() {
         </section>
 
         <section className="w-full py-12 md:py-16 lg:py-20 bg-gradient-to-r from-[#0a2342]/5 to-[#228186]/5">
-          <div className="container px-4 md:px-6">
+          <div className="container px-4 md:px-6 mx-auto">
             <div className="mx-auto max-w-[800px] space-y-6">
               <h2 className="text-2xl font-bold tracking-tight text-[#0a2342]">
                 Specific Terminology Used for Shipping and Logistics in East
@@ -662,7 +645,7 @@ export default function Resources() {
 
         {/* Practical Examples */}
         <section className="w-full py-12 md:py-16 lg:py-20">
-          <div className="container px-4 md:px-6">
+          <div className="container px-4 md:px-6 mx-auto">
             <div className="mx-auto max-w-[800px] space-y-6">
               <h2 className="text-2xl font-bold tracking-tight text-[#0a2342]">
                 Practical Examples and Benefits for Businesses
@@ -816,7 +799,7 @@ export default function Resources() {
 
         {/* Conclusion */}
         <section className="w-full py-12 md:py-16 lg:py-20 bg-primary text-white">
-          <div className="container px-4 md:px-6">
+          <div className="container px-4 md:px-6 mx-auto">
             <div className="mx-auto max-w-[800px] text-center space-y-6">
               <h2 className="text-2xl font-bold tracking-tight">Conclusion</h2>
               <p className="text-white/80 leading-7 max-w-3xl mx-auto">
