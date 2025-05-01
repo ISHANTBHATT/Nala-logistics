@@ -1,75 +1,75 @@
-// import { NextResponse } from "next/server";
-// import nodemailer from "nodemailer";
-
-// const email = process.env.SMTP_USER;
-// const pass = process.env.SMTP_PASS;
-
-// const transporter = nodemailer.createTransport({
-//   service: "gmail",
-//   auth: {
-//     user: email,
-//     pass,
-//   },
-// });
-
-// export async function POST(request) {
-//   try {
-//     const { userEmail, userName, phone, message } = await request.json();
-
-//     await transporter.sendMail({
-//       from: email,
-//       to: email,
-//       subject: "New Contact Form Submission",
-//       html: `<p>Dear Admin,</p>
-//       <p><strong>User Information:</strong></p>
-//       <ul>
-//       <li><strong>Name:</strong> ${userName}</li>
-//       <li><strong>EMail:</strong> ${userEmail}</li>
-//       <li><strong>Subject:</strong> ${phone}</li>
-//       <li><strong>Message:</strong> ${message}</li>
-//       </ul>`,
-//     });
-//     return NextResponse.json({ success: true });
-//   } catch (error) {
-//     console.error("Error sending email:", error);
-//     return NextResponse.json(
-//       { success: false, message: "Failed to send email" },
-//       { status: 500 }
-//     );
-//   }
-// }
-
-// pages/api/contact-sendgrid.js
 import { NextResponse } from "next/server";
-import sendgrid from "@sendgrid/mail";
+import nodemailer from "nodemailer";
 
-sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
+const email = process.env.SMTP_USER;
+const pass = process.env.SMTP_PASS;
+
+const transporter = nodemailer.createTransport({
+  service: "gmail",
+  auth: {
+    user: email,
+    pass,
+  },
+});
 
 export async function POST(request) {
   try {
     const { userEmail, userName, phone, message } = await request.json();
 
-    await sendgrid.send({
-      to: process.env.ADMIN_EMAIL,
-      from: process.env.VERIFIED_SENDER, // must be a verified sender in SendGrid
+    await transporter.sendMail({
+      from: email,
+      to: email,
       subject: "New Contact Form Submission",
-      html: `
-        <p>Dear Admin,</p>
-        <p><strong>User Information:</strong></p>
-        <ul>
-          <li><strong>Name:</strong> ${userName}</li>
-          <li><strong>Email:</strong> ${userEmail}</li>
-          <li><strong>Phone:</strong> ${phone}</li>
-          <li><strong>Message:</strong> ${message}</li>
-        </ul>`,
+      html: `<p>Dear Admin,</p>
+      <p><strong>User Information:</strong></p>
+      <ul>
+      <li><strong>Name:</strong> ${userName}</li>
+      <li><strong>EMail:</strong> ${userEmail}</li>
+      <li><strong>Subject:</strong> ${phone}</li>
+      <li><strong>Message:</strong> ${message}</li>
+      </ul>`,
     });
-
     return NextResponse.json({ success: true });
   } catch (error) {
-    console.error("SendGrid error:", error);
+    console.error("Error sending email:", error);
     return NextResponse.json(
-      { success: false, message: "Failed to send email via SendGrid" },
+      { success: false, message: "Failed to send email" },
       { status: 500 }
     );
   }
 }
+
+// pages/api/contact-sendgrid.js
+// import { NextResponse } from "next/server";
+// import sendgrid from "@sendgrid/mail";
+
+// sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
+
+// export async function POST(request) {
+//   try {
+//     const { userEmail, userName, phone, message } = await request.json();
+
+//     await sendgrid.send({
+//       to: process.env.ADMIN_EMAIL,
+//       from: process.env.VERIFIED_SENDER, // must be a verified sender in SendGrid
+//       subject: "New Contact Form Submission",
+//       html: `
+//         <p>Dear Admin,</p>
+//         <p><strong>User Information:</strong></p>
+//         <ul>
+//           <li><strong>Name:</strong> ${userName}</li>
+//           <li><strong>Email:</strong> ${userEmail}</li>
+//           <li><strong>Phone:</strong> ${phone}</li>
+//           <li><strong>Message:</strong> ${message}</li>
+//         </ul>`,
+//     });
+
+//     return NextResponse.json({ success: true });
+//   } catch (error) {
+//     console.error("SendGrid error:", error);
+//     return NextResponse.json(
+//       { success: false, message: "Failed to send email via SendGrid" },
+//       { status: 500 }
+//     );
+//   }
+// }
